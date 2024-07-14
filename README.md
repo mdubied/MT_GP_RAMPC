@@ -28,6 +28,7 @@ In addition you will need to install:
 - Acados
 - PyTorch
 - GPyTorch
+- Jupyter
 
 ## How to run the code
 Again, we give separate instruction for the offline and online part
@@ -44,16 +45,22 @@ Note: The computations were performed on a laptop running Windows 11.
 
 ### Online part
 First activate your virtual environment. In a terminal, enter:
-``source env/bin/activate
-``
+```source env/bin/activate
+```
 Then, 
-``export ACADOS_SOURCE_DIR=/path_to_acados/acados
+```export ACADOS_SOURCE_DIR=/path_to_acados/acados
 export LD_LIBRARY_PATH=/path_to_acados/acados/lib
-``
-where I assume you installed Acados in the folder "acados". 
-The examples presented in the report are located in 
-- 
+```
+where I assume you installed Acados in the folder "acados".
+The results of the thesis can be reproduced by running the following two Jupyter Notebook:
+- examples/mass_spring_damper/main_mass_spring_damper
+- examples/quadrotor/main_quadrotor
 
+The OCP problems are defined in 
+-  examples/mass_spring_damper/mass_spring_damper_model_acados
+-  examples/quadrotor/quadrotor_model_acados
+
+Most of the utility functions (dynamics, integrators, residual models, etc) are stored in the folder "ra_gpmpc_utils". The utility functions used for GPyTorch (training, plotting, etc), are in the folder "gpytorch_utils".
 
 
  
