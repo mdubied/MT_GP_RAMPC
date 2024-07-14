@@ -33,9 +33,27 @@ In addition you will need to install:
 Again, we give separate instruction for the offline and online part
 
 ### Offline part
+First, run "initWorkspace".
+The following files are important:
+- main: compute the CCM and the offline constants
+- params/PQRparamsMSDS: define the parameters of the mass-spring-damper system
+- params/PQRparam: define the parameters of the quadrotor
+- dynamics/MassSpringDamperSystem: define the dynamics of the mass-spring-damper-system
+- dynamics/PlanarQuadrotor: define the dynamics of the quadrotor
+Note: The computations were performed on a laptop running Windows 11.
 
-Make sure you add the dependencies to the Matlab path.
 ### Online part
+First activate your virtual environment. In a terminal, enter:
+``source env/bin/activate
+``
+Then, 
+``export ACADOS_SOURCE_DIR=/path_to_acados/acados
+export LD_LIBRARY_PATH=/path_to_acados/acados/lib
+``
+where I assume you installed Acados in the folder "acados". 
+The examples presented in the report are located in 
+- 
+
 
 
  
