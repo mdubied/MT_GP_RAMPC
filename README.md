@@ -12,7 +12,30 @@ It is compose of three folders:
   > https://gitlab.ethz.ch/ics/zero-order-gp-mpc
 - offline_constants: a folder that contains the offline quantities computed by the offline algorithm. The online algorithm takes the content of this folder as input. 
 
-## Instalation
+## Installation and dependencies
+After cloning this repo, a few steps are required to run the code.
+
+### Offline part
+For the offline part, the following dependencies are required
+- Matlab (tested on Matlab 2020b)
+- Casadi
+- YALMIP
+- Mosek
+Make sure you add the dependencies to the Matlab path.
+### Online part
+For the online part, we recommend using a virtual environment, using venv. We recommend using a Python 3.10.12.
+In addition you will need to install:
+- Acados
+- PyTorch
+- GPyTorch
 
 ## How to run the code
+Again, we give separate instruction for the offline and online part
+
+### Offline part
+
+Make sure you add the dependencies to the Matlab path.
+### Online part
+
+
  
