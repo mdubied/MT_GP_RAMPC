@@ -45,10 +45,12 @@ Note: The computations were performed on a laptop running Windows 11.
 
 ### Online part
 First activate your virtual environment. In a terminal, enter:
-```source env/bin/activate
+```
+source env/bin/activate
 ```
 Then, 
-```export ACADOS_SOURCE_DIR=/path_to_acados/acados
+```
+export ACADOS_SOURCE_DIR=/path_to_acados/acados
 export LD_LIBRARY_PATH=/path_to_acados/acados/lib
 ```
 where I assume you installed Acados in the folder "acados".
@@ -61,6 +63,7 @@ The OCP problems are defined in
 -  examples/quadrotor/quadrotor_model_acados
 
 Most of the utility functions (dynamics, integrators, residual models, etc) are stored in the folder "ra_gpmpc_utils". The utility functions used for GPyTorch (training, plotting, etc), are in the folder "gpytorch_utils".
+Note: The computations were performed on a Windows Subsystem for Linux (WSL).
 
 
  
