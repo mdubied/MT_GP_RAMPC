@@ -41,6 +41,7 @@ The following files are important:
 - params/PQRparam: define the parameters of the quadrotor
 - dynamics/MassSpringDamperSystem: define the dynamics of the mass-spring-damper-system
 - dynamics/PlanarQuadrotor: define the dynamics of the quadrotor
+  
 Note: The computations were performed on a laptop running Windows 11.
 
 ### Online part
@@ -63,6 +64,7 @@ The OCP problems are defined in
 -  examples/quadrotor/quadrotor_model_acados
 
 Most of the utility functions (dynamics, integrators, residual models, etc) are stored in the folder "ra_gpmpc_utils". The utility functions used for GPyTorch (training, plotting, etc), are in the folder "gpytorch_utils".
+
 Note: The computations were performed on a Windows Subsystem for Linux (WSL).
 
 
